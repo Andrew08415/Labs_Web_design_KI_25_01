@@ -1,0 +1,240 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #92400E;
+    text-align: center;
+}
+
+
+header {
+    background-color: #FFFBEB;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+
+.main-menu {
+    margin-top: 20px;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #92400E;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.main-menu a:hover, .main-menu a.active {
+    border-bottom: 2px solid #92400E;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul:not(.main-menu ul), ol {
+    padding-left: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #92400E;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+    color: #92400E;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFBEB;
+}
+
+.centered-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-member {
+    display: inline-block;
+    width: 220px;
+    margin: 15px;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #FFFBEB;
+}
+
+.team-member h3 {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFBEB;
+    border: 1px solid #92400E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #92400E;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #92400E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #7a350c;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .main-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .team-member {
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .form-container {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+}
