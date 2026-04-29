@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Екологія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Освітньо-професійна програма: "Екологія"</h1>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html" class="active">Головна</a></li>
+                <li><a href="competencies.html">Компетенції</a></li>
+                <li><a href="components.html">Компоненти</a></li>
+                <li><a href="graph.html">Схема</a></li>
+                <li><a href="team.html">Робоча група</a></li>
+                <li><a href="reports.html">Звіти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <p class="subtitle">Рівень вищої освіти: Другий (магістерський)</p>
+        <p class="subtitle">Галузь знань: E - Природничі науки, математика та статистика</p>
+        <p class="subtitle">Спеціальність: E2 - Екологія</p>
+        
+        <h2>Мета освітньої програми</h2>
+        <p>Здобуття поглиблених теоретичних, практичних знань, умінь, навичок, загальних засад методології професійної та наукової діяльності, формування загальних і фахових компетентностей, достатніх для ефективного виконання завдань відповідного рівня професійної діяльності на основі набуття навичок проведення досліджень та обробки отриманих результатів з використанням сучасних приладів, обладнання та інформаційно-комп'ютерних технологій.</p>
+
+        <div class="media-section" style="margin-top: 40px; margin-bottom: 40px;">
+            <h2>Документ освітньої програми</h2>
+            <iframe src="https://drive.google.com/file/d/1KoIPzyPgWROvhp6p8waSpHcb3HAhKgQ5/preview" width="100%" height="600" style="border: none; margin-bottom: 20px;"></iframe>
+
+            <h2>Відео про ІФНТУНГ</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                <iframe src="https://www.youtube.com/embed/bVwK8GilNeQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Питання до адміністрації</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="theme">Тема повідомлення:</label>
+                    <input type="text" id="theme" name="theme" minlength="5" required placeholder="Введіть тему (мінімум 5 символів)">
+                </div>
+                <div class="form-group">
+                    <label for="category">Категорія питання:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Оберіть категорію</option>
+                        <option value="education">Навчальний процес</option>
+                        <option value="practice">Практика та працевлаштування</option>
+                        <option value="financial">Фінансові питання</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question">Ваше питання:</label>
+                    <textarea id="question" name="question" rows="5" required placeholder="Детально опишіть ваше питання..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Надіслати питання</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Стадник © ІФНТУНГ, 2026 р.</p>
+    </footer>
+</body>
+</html>
